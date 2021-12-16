@@ -1,0 +1,171 @@
+-- TESTING PURPOSES ONLY, THIS IS NOT COMPLETE DO NOT USE.
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local BHAD = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TopWindow = Instance.new("Frame")
+local MiscButton = Instance.new("TextButton")
+local BotButton = Instance.new("TextButton")
+local PlayerScriptsButton = Instance.new("TextButton")
+local ScriptsButton = Instance.new("TextButton")
+local HelpAndScam = Instance.new("Frame")
+local ScamHelp = Instance.new("TextLabel")
+local Help = Instance.new("TextLabel")
+local Updates = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.238220677, 0, 0.237745091, 0)
+MainFrame.Size = UDim2.new(0, 662, 0, 339)
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 143, 0, 28)
+Title.Text = "BadHook"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+BHAD.Name = "BHAD"
+BHAD.Parent = ScreenGui
+BHAD.BackgroundColor3 = Color3.fromRGB(33, 244, 255)
+BHAD.BackgroundTransparency = 0.850
+BHAD.BorderSizePixel = 0
+BHAD.Position = UDim2.new(0.931239247, 0, 0, 0)
+BHAD.Size = UDim2.new(0, 132, 0, 31)
+
+TextLabel.Parent = BHAD
+TextLabel.BackgroundColor3 = Color3.fromRGB(35, 197, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-7.4505806e-09, 0, -0.0322580338, 0)
+TextLabel.Size = UDim2.new(0, 132, 0, 32)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "BadHook | V0.0.1"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TopWindow.Name = "TopWindow"
+TopWindow.Parent = ScreenGui
+TopWindow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopWindow.Position = UDim2.new(0.313020825, 0, 0.237745091, 0)
+TopWindow.Size = UDim2.new(0, 519, 0, 28)
+
+MiscButton.Name = "MiscButton"
+MiscButton.Parent = TopWindow
+MiscButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+MiscButton.Position = UDim2.new(0.053728696, 0, 0, 0)
+MiscButton.Size = UDim2.new(0, 107, 0, 28)
+MiscButton.Font = Enum.Font.SourceSans
+MiscButton.Text = "Misc"
+MiscButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MiscButton.TextScaled = true
+MiscButton.TextSize = 14.000
+MiscButton.TextWrapped = true
+
+BotButton.Name = "BotButton"
+BotButton.Parent = TopWindow
+BotButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+BotButton.Position = UDim2.new(0.273381859, 0, 0, 0)
+BotButton.Size = UDim2.new(0, 107, 0, 28)
+BotButton.Font = Enum.Font.SourceSans
+BotButton.Text = "Bot Stuff"
+BotButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+BotButton.TextScaled = true
+BotButton.TextSize = 14.000
+BotButton.TextWrapped = true
+
+PlayerScriptsButton.Name = "PlayerScriptsButton"
+PlayerScriptsButton.Parent = TopWindow
+PlayerScriptsButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+PlayerScriptsButton.Position = UDim2.new(0.494961828, 0, 0, 0)
+PlayerScriptsButton.Size = UDim2.new(0, 107, 0, 28)
+PlayerScriptsButton.Font = Enum.Font.SourceSans
+PlayerScriptsButton.Text = "Player"
+PlayerScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerScriptsButton.TextScaled = true
+PlayerScriptsButton.TextSize = 14.000
+PlayerScriptsButton.TextWrapped = true
+
+ScriptsButton.Name = "ScriptsButton"
+ScriptsButton.Parent = TopWindow
+ScriptsButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+ScriptsButton.Position = UDim2.new(0.716541767, 0, 0, 0)
+ScriptsButton.Size = UDim2.new(0, 107, 0, 28)
+ScriptsButton.Font = Enum.Font.SourceSans
+ScriptsButton.Text = "Scripts"
+ScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptsButton.TextScaled = true
+ScriptsButton.TextSize = 14.000
+ScriptsButton.TextWrapped = true
+
+HelpAndScam.Name = "HelpAndScam"
+HelpAndScam.Parent = ScreenGui
+HelpAndScam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HelpAndScam.BackgroundTransparency = 1.000
+HelpAndScam.Position = UDim2.new(0.238541663, 0, 0.272058815, 0)
+HelpAndScam.Size = UDim2.new(0, 662, 0, 311)
+
+ScamHelp.Name = "ScamHelp"
+ScamHelp.Parent = HelpAndScam
+ScamHelp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScamHelp.BackgroundTransparency = 1.000
+ScamHelp.Position = UDim2.new(0.0332326293, 0, 0.0257234722, 0)
+ScamHelp.Size = UDim2.new(0, 240, 0, 64)
+ScamHelp.Font = Enum.Font.SourceSans
+ScamHelp.Text = "If you paid for this script, you have been scammed, demand your money back immediately"
+ScamHelp.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScamHelp.TextScaled = true
+ScamHelp.TextSize = 14.000
+ScamHelp.TextWrapped = true
+
+Help.Name = "Help"
+Help.Parent = HelpAndScam
+Help.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Help.BackgroundTransparency = 1.000
+Help.Position = UDim2.new(0.0226586107, 0, 0.289389074, 0)
+Help.Size = UDim2.new(0, 233, 0, 83)
+Help.Font = Enum.Font.SourceSans
+Help.Text = "If you don't know how to use this script, do not worry, if you got this script from my github, the download includes a setup file and how to use file."
+Help.TextColor3 = Color3.fromRGB(255, 255, 255)
+Help.TextScaled = true
+Help.TextSize = 14.000
+Help.TextWrapped = true
+
+Updates.Name = "Updates"
+Updates.Parent = HelpAndScam
+Updates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Updates.BackgroundTransparency = 1.000
+Updates.Position = UDim2.new(0.0468277931, 0, 0.646302223, 0)
+Updates.Size = UDim2.new(0, 246, 0, 86)
+Updates.Font = Enum.Font.SourceSans
+Updates.Text = "Updates @ https://github.com/cOpEtriNe/BadHook"
+Updates.TextColor3 = Color3.fromRGB(255, 255, 255)
+Updates.TextScaled = true
+Updates.TextSize = 14.000
+Updates.TextWrapped = true
+
+TextLabel_2.Parent = HelpAndScam
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.430513591, 0, 0.0225080382, 0)
+TextLabel_2.Size = UDim2.new(0, 368, 0, 149)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "My YouTube Channel: https://www.youtube.com/channel/UCFqrtslBPxAYlK_YPpddsaA"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true

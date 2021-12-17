@@ -1,0 +1,1563 @@
+-- Verison 2, any bugs? let me know.
+-- dont paste this script WITHOUT CREDIT.
+-- you have been warned lol
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local BHAD = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TopWindow = Instance.new("Frame")
+local MiscButton = Instance.new("TextButton")
+local BotButton = Instance.new("TextButton")
+local PlayerScriptsButton = Instance.new("TextButton")
+local ScriptsButton = Instance.new("TextButton")
+local MiscFrame = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local Advertise = Instance.new("TextButton")
+local RandomGUI = Instance.new("TextButton")
+local BotFrame = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local FactBot = Instance.new("TextButton")
+local NumberBot = Instance.new("TextButton")
+local PlayerFrame = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local WS100 = Instance.new("TextButton")
+local JH100 = Instance.new("TextButton")
+local HelpAndScam = Instance.new("Frame")
+local ScamHelp = Instance.new("TextLabel")
+local Help = Instance.new("TextLabel")
+local Updates = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.238220677, 0, 0.237745091, 0)
+MainFrame.Size = UDim2.new(0, 662, 0, 339)
+MainFrame.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 143, 0, 28)
+Title.Text = "BadHook"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+BHAD.Name = "BHAD"
+BHAD.Parent = ScreenGui
+BHAD.BackgroundColor3 = Color3.fromRGB(33, 244, 255)
+BHAD.BackgroundTransparency = 0.850
+BHAD.BorderSizePixel = 0
+BHAD.Position = UDim2.new(0.931239247, 0, 0, 0)
+BHAD.Size = UDim2.new(0, 132, 0, 31)
+
+TextLabel.Parent = BHAD
+TextLabel.BackgroundColor3 = Color3.fromRGB(35, 197, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-7.4505806e-09, 0, -0.0322580338, 0)
+TextLabel.Size = UDim2.new(0, 132, 0, 32)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "BadHook | V0.0.2"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TopWindow.Name = "TopWindow"
+TopWindow.Parent = ScreenGui
+TopWindow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopWindow.Position = UDim2.new(0.313020825, 0, 0.237745091, 0)
+TopWindow.Size = UDim2.new(0, 519, 0, 28)
+TopWindow.MouseButtonDown:connect(function()
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+end)
+
+MiscButton.Name = "MiscButton"
+MiscButton.Parent = TopWindow
+MiscButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+MiscButton.Position = UDim2.new(0.053728696, 0, 0, 0)
+MiscButton.Size = UDim2.new(0, 107, 0, 28)
+MiscButton.Font = Enum.Font.SourceSans
+MiscButton.Text = "Misc"
+MiscButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MiscButton.TextScaled = true
+MiscButton.TextSize = 14.000
+MiscButton.TextWrapped = true
+MiscButton.MouseButton1Down:connect(function()
+	MiscFrame.Visible = true
+end)
+
+BotButton.Name = "BotButton"
+BotButton.Parent = TopWindow
+BotButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+BotButton.Position = UDim2.new(0.273381859, 0, 0, 0)
+BotButton.Size = UDim2.new(0, 107, 0, 28)
+BotButton.Font = Enum.Font.SourceSans
+BotButton.Text = "Bot Stuff"
+BotButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+BotButton.TextScaled = true
+BotButton.TextSize = 14.000
+BotButton.TextWrapped = true
+BotButton.MouseButton1Down:connect(function()
+	BotFrame.Visible = true
+end)
+
+PlayerScriptsButton.Name = "PlayerScriptsButton"
+PlayerScriptsButton.Parent = TopWindow
+PlayerScriptsButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+PlayerScriptsButton.Position = UDim2.new(0.494961828, 0, 0, 0)
+PlayerScriptsButton.Size = UDim2.new(0, 107, 0, 28)
+PlayerScriptsButton.Font = Enum.Font.SourceSans
+PlayerScriptsButton.Text = "Player"
+PlayerScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerScriptsButton.TextScaled = true
+PlayerScriptsButton.TextSize = 14.000
+PlayerScriptsButton.TextWrapped = true
+PlayerScriptsButton.MouseButton1Down:connect(function()
+	PlayerFrame.Visible = true
+end)
+
+ScriptsButton.Name = "ScriptsButton"
+ScriptsButton.Parent = TopWindow
+ScriptsButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+ScriptsButton.Position = UDim2.new(0.716541767, 0, 0, 0)
+ScriptsButton.Size = UDim2.new(0, 107, 0, 28)
+ScriptsButton.Font = Enum.Font.SourceSans
+ScriptsButton.Text = "Scripts"
+ScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptsButton.TextScaled = true
+ScriptsButton.TextSize = 14.000
+ScriptsButton.TextWrapped = true
+ScriptsButton.MouseButton1Down:connect(function()
+	print("Scripts section has been disabled because it is in development, i dont know what scripts to use LMFAO!!!")
+end)
+
+MiscFrame.Name = "MiscFrame"
+MiscFrame.Parent = TopWindow
+MiscFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MiscFrame.BorderSizePixel = 0
+MiscFrame.Position = UDim2.new(-1.08285165, 0, 3.82142854, 0)
+MiscFrame.Size = UDim2.new(0, 464, 0, 414)
+MiscFrame.Visible = false
+MiscFrame.Draggable = true
+
+Title_2.Name = "Title"
+Title_2.Parent = MiscFrame
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BorderSizePixel = 5
+Title_2.Size = UDim2.new(0, 464, 0, 50)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "Miscellaneous"
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+Advertise.Name = "Advertise"
+Advertise.Parent = MiscFrame
+Advertise.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Advertise.BorderSizePixel = 0
+Advertise.Position = UDim2.new(0, 0, 0.185990334, 0)
+Advertise.Size = UDim2.new(0, 200, 0, 50)
+Advertise.Font = Enum.Font.SourceSans
+Advertise.Text = "Script Advertise"
+Advertise.TextColor3 = Color3.fromRGB(0, 0, 0)
+Advertise.TextScaled = true
+Advertise.TextSize = 14.000
+Advertise.TextWrapped = true
+Advertise.MouseButton1Down:connect(function()
+	print("Broke")
+end)
+
+RandomGUI.Name = "Random GUI"
+RandomGUI.Parent = MiscFrame
+RandomGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RandomGUI.Position = UDim2.new(0, 0, 0.33816424, 0)
+RandomGUI.Size = UDim2.new(0, 200, 0, 50)
+RandomGUI.Font = Enum.Font.SourceSans
+RandomGUI.Text = "Random GUI"
+RandomGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+RandomGUI.TextScaled = true
+RandomGUI.TextSize = 14.000
+RandomGUI.TextWrapped = true
+RandomGUI.MouseButton1Down:connect(function()
+	-- created by cOpEtriNe
+	-- i made this because i was bored and had nothing else todo
+	-- the anti lag is for when you want to host bots on roblox with a exploit that can inject into multiple roblox client's.
+	-- Freecam, Old TopBar UI,Console are all made by me (except the console GUI)
+
+
+
+	local robloxtools = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local Title = Instance.new("TextLabel")
+	local Freecam = Instance.new("TextButton")
+	local Console = Instance.new("TextButton")
+	local AntiLag = Instance.new("TextButton")
+	local TopBarUI = Instance.new("TextButton")
+	local ConsoleHelp = Instance.new("TextLabel")
+
+	--Properties:
+
+	robloxtools.Name = "robloxtools"
+	robloxtools.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+	Frame.Parent = robloxtools
+	Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame.BackgroundTransparency = 0.400
+	Frame.Position = UDim2.new(0.087878786, 0, 0.386174023, 0)
+	Frame.Size = UDim2.new(0, 472, 0, 412)
+	Frame.Draggable = true
+
+	Title.Name = "Title"
+	Title.Parent = Frame
+	Title.BackgroundColor3 = Color3.fromRGB(149, 215, 255)
+	Title.BackgroundTransparency = 0.400
+	Title.Size = UDim2.new(0, 472, 0, 50)
+	Title.Font = Enum.Font.SourceSans
+	Title.Text = "Roblox Tools"
+	Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Title.TextScaled = true
+	Title.TextSize = 14.000
+	Title.TextWrapped = true
+	Title.Draggable = true
+
+	Freecam.Name = "Freecam"
+	Freecam.Parent = Frame
+	Freecam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Freecam.Position = UDim2.new(0.0133171938, 0, 0.133495152, 0)
+	Freecam.Size = UDim2.new(0, 200, 0, 50)
+	Freecam.Font = Enum.Font.SourceSans
+	Freecam.Text = "Freecam"
+	Freecam.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Freecam.TextScaled = true
+	Freecam.TextSize = 14.000
+	Freecam.TextWrapped = true
+	Freecam.MouseButton1Down:connect(function()
+		local Freecam = Instance.new("ScreenGui")
+
+		--Properties:
+
+		Freecam.Name = "Freecam"
+		Freecam.Parent = game.Players.LocalPlayer.PlayerGui
+		Freecam.ResetOnSpawn = false
+
+		-- Scripts:
+
+		local function CLPERP_fake_script() -- Freecam.FreecamScript 
+			local script = Instance.new('LocalScript', Freecam)
+
+			------------------------------------------------------------------------
+			-- Freecam
+			-- Cinematic free camera for spectating and video production.
+			------------------------------------------------------------------------
+
+			local pi    = math.pi
+			local abs   = math.abs
+			local clamp = math.clamp
+			local exp   = math.exp
+			local rad   = math.rad
+			local sign  = math.sign
+			local sqrt  = math.sqrt
+			local tan   = math.tan
+
+			local ContextActionService = game:GetService("ContextActionService")
+			local Players = game:GetService("Players")
+			local RunService = game:GetService("RunService")
+			local StarterGui = game:GetService("StarterGui")
+			local UserInputService = game:GetService("UserInputService")
+			local Workspace = game:GetService("Workspace")
+
+			local LocalPlayer = Players.LocalPlayer
+			if not LocalPlayer then
+				Players:GetPropertyChangedSignal("LocalPlayer"):Wait()
+				LocalPlayer = Players.LocalPlayer
+			end
+
+			local Camera = Workspace.CurrentCamera
+			Workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
+				local newCamera = Workspace.CurrentCamera
+				if newCamera then
+					Camera = newCamera
+				end
+			end)
+
+			------------------------------------------------------------------------
+
+			local TOGGLE_INPUT_PRIORITY = Enum.ContextActionPriority.Low.Value
+			local INPUT_PRIORITY = Enum.ContextActionPriority.High.Value
+			local FREECAM_MACRO_KB = {Enum.KeyCode.LeftShift, Enum.KeyCode.P}
+
+			local NAV_GAIN = Vector3.new(1, 1, 1)*64
+			local PAN_GAIN = Vector2.new(0.75, 1)*8
+			local FOV_GAIN = 300
+
+			local PITCH_LIMIT = rad(90)
+
+			local VEL_STIFFNESS = 1.5
+			local PAN_STIFFNESS = 1.0
+			local FOV_STIFFNESS = 4.0
+
+			------------------------------------------------------------------------
+
+			local Spring = {} do
+				Spring.__index = Spring
+
+				function Spring.new(freq, pos)
+					local self = setmetatable({}, Spring)
+					self.f = freq
+					self.p = pos
+					self.v = pos*0
+					return self
+				end
+
+				function Spring:Update(dt, goal)
+					local f = self.f*2*pi
+					local p0 = self.p
+					local v0 = self.v
+
+					local offset = goal - p0
+					local decay = exp(-f*dt)
+
+					local p1 = goal + (v0*dt - offset*(f*dt + 1))*decay
+					local v1 = (f*dt*(offset*f - v0) + v0)*decay
+
+					self.p = p1
+					self.v = v1
+
+					return p1
+				end
+
+				function Spring:Reset(pos)
+					self.p = pos
+					self.v = pos*0
+				end
+			end
+
+			------------------------------------------------------------------------
+
+			local cameraPos = Vector3.new()
+			local cameraRot = Vector2.new()
+			local cameraFov = 0
+
+			local velSpring = Spring.new(VEL_STIFFNESS, Vector3.new())
+			local panSpring = Spring.new(PAN_STIFFNESS, Vector2.new())
+			local fovSpring = Spring.new(FOV_STIFFNESS, 0)
+
+			------------------------------------------------------------------------
+
+			local Input = {} do
+				local thumbstickCurve do
+					local K_CURVATURE = 2.0
+					local K_DEADZONE = 0.15
+
+					local function fCurve(x)
+						return (exp(K_CURVATURE*x) - 1)/(exp(K_CURVATURE) - 1)
+					end
+
+					local function fDeadzone(x)
+						return fCurve((x - K_DEADZONE)/(1 - K_DEADZONE))
+					end
+
+					function thumbstickCurve(x)
+						return sign(x)*clamp(fDeadzone(abs(x)), 0, 1)
+					end
+				end
+
+				local gamepad = {
+					ButtonX = 0,
+					ButtonY = 0,
+					DPadDown = 0,
+					DPadUp = 0,
+					ButtonL2 = 0,
+					ButtonR2 = 0,
+					Thumbstick1 = Vector2.new(),
+					Thumbstick2 = Vector2.new(),
+				}
+
+				local keyboard = {
+					W = 0,
+					A = 0,
+					S = 0,
+					D = 0,
+					E = 0,
+					Q = 0,
+					U = 0,
+					H = 0,
+					J = 0,
+					K = 0,
+					I = 0,
+					Y = 0,
+					Up = 0,
+					Down = 0,
+					LeftShift = 0,
+					RightShift = 0,
+				}
+
+				local mouse = {
+					Delta = Vector2.new(),
+					MouseWheel = 0,
+				}
+
+				local NAV_GAMEPAD_SPEED  = Vector3.new(1, 1, 1)
+				local NAV_KEYBOARD_SPEED = Vector3.new(1, 1, 1)
+				local PAN_MOUSE_SPEED    = Vector2.new(1, 1)*(pi/64)
+				local PAN_GAMEPAD_SPEED  = Vector2.new(1, 1)*(pi/8)
+				local FOV_WHEEL_SPEED    = 1.0
+				local FOV_GAMEPAD_SPEED  = 0.25
+				local NAV_ADJ_SPEED      = 0.75
+				local NAV_SHIFT_MUL      = 0.25
+
+				local navSpeed = 1
+
+				function Input.Vel(dt)
+					navSpeed = clamp(navSpeed + dt*(keyboard.Up - keyboard.Down)*NAV_ADJ_SPEED, 0.01, 4)
+
+					local kGamepad = Vector3.new(
+						thumbstickCurve(gamepad.Thumbstick1.X),
+						thumbstickCurve(gamepad.ButtonR2) - thumbstickCurve(gamepad.ButtonL2),
+						thumbstickCurve(-gamepad.Thumbstick1.Y)
+					)*NAV_GAMEPAD_SPEED
+
+					local kKeyboard = Vector3.new(
+						keyboard.D - keyboard.A + keyboard.K - keyboard.H,
+						keyboard.E - keyboard.Q + keyboard.I - keyboard.Y,
+						keyboard.S - keyboard.W + keyboard.J - keyboard.U
+					)*NAV_KEYBOARD_SPEED
+
+					local shift = UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) or UserInputService:IsKeyDown(Enum.KeyCode.RightShift)
+
+					return (kGamepad + kKeyboard)*(navSpeed*(shift and NAV_SHIFT_MUL or 1))
+				end
+
+				function Input.Pan(dt)
+					local kGamepad = Vector2.new(
+						thumbstickCurve(gamepad.Thumbstick2.Y),
+						thumbstickCurve(-gamepad.Thumbstick2.X)
+					)*PAN_GAMEPAD_SPEED
+					local kMouse = mouse.Delta*PAN_MOUSE_SPEED
+					mouse.Delta = Vector2.new()
+					return kGamepad + kMouse
+				end
+
+				function Input.Fov(dt)
+					local kGamepad = (gamepad.ButtonX - gamepad.ButtonY)*FOV_GAMEPAD_SPEED
+					local kMouse = mouse.MouseWheel*FOV_WHEEL_SPEED
+					mouse.MouseWheel = 0
+					return kGamepad + kMouse
+				end
+
+				do
+					local function Keypress(action, state, input)
+						keyboard[input.KeyCode.Name] = state == Enum.UserInputState.Begin and 1 or 0
+						return Enum.ContextActionResult.Sink
+					end
+
+					local function GpButton(action, state, input)
+						gamepad[input.KeyCode.Name] = state == Enum.UserInputState.Begin and 1 or 0
+						return Enum.ContextActionResult.Sink
+					end
+
+					local function MousePan(action, state, input)
+						local delta = input.Delta
+						mouse.Delta = Vector2.new(-delta.y, -delta.x)
+						return Enum.ContextActionResult.Sink
+					end
+
+					local function Thumb(action, state, input)
+						gamepad[input.KeyCode.Name] = input.Position
+						return Enum.ContextActionResult.Sink
+					end
+
+					local function Trigger(action, state, input)
+						gamepad[input.KeyCode.Name] = input.Position.z
+						return Enum.ContextActionResult.Sink
+					end
+
+					local function MouseWheel(action, state, input)
+						mouse[input.UserInputType.Name] = -input.Position.z
+						return Enum.ContextActionResult.Sink
+					end
+
+					local function Zero(t)
+						for k, v in pairs(t) do
+							t[k] = v*0
+						end
+					end
+
+					function Input.StartCapture()
+						ContextActionService:BindActionAtPriority("FreecamKeyboard", Keypress, false, INPUT_PRIORITY,
+							Enum.KeyCode.W, Enum.KeyCode.U,
+							Enum.KeyCode.A, Enum.KeyCode.H,
+							Enum.KeyCode.S, Enum.KeyCode.J,
+							Enum.KeyCode.D, Enum.KeyCode.K,
+							Enum.KeyCode.E, Enum.KeyCode.I,
+							Enum.KeyCode.Q, Enum.KeyCode.Y,
+							Enum.KeyCode.Up, Enum.KeyCode.Down
+						)
+						ContextActionService:BindActionAtPriority("FreecamMousePan",          MousePan,   false, INPUT_PRIORITY, Enum.UserInputType.MouseMovement)
+						ContextActionService:BindActionAtPriority("FreecamMouseWheel",        MouseWheel, false, INPUT_PRIORITY, Enum.UserInputType.MouseWheel)
+						ContextActionService:BindActionAtPriority("FreecamGamepadButton",     GpButton,   false, INPUT_PRIORITY, Enum.KeyCode.ButtonX, Enum.KeyCode.ButtonY)
+						ContextActionService:BindActionAtPriority("FreecamGamepadTrigger",    Trigger,    false, INPUT_PRIORITY, Enum.KeyCode.ButtonR2, Enum.KeyCode.ButtonL2)
+						ContextActionService:BindActionAtPriority("FreecamGamepadThumbstick", Thumb,      false, INPUT_PRIORITY, Enum.KeyCode.Thumbstick1, Enum.KeyCode.Thumbstick2)
+					end
+
+					function Input.StopCapture()
+						navSpeed = 1
+						Zero(gamepad)
+						Zero(keyboard)
+						Zero(mouse)
+						ContextActionService:UnbindAction("FreecamKeyboard")
+						ContextActionService:UnbindAction("FreecamMousePan")
+						ContextActionService:UnbindAction("FreecamMouseWheel")
+						ContextActionService:UnbindAction("FreecamGamepadButton")
+						ContextActionService:UnbindAction("FreecamGamepadTrigger")
+						ContextActionService:UnbindAction("FreecamGamepadThumbstick")
+					end
+				end
+			end
+
+			local function GetFocusDistance(cameraFrame)
+				local znear = 0.1
+				local viewport = Camera.ViewportSize
+				local projy = 2*tan(cameraFov/2)
+				local projx = viewport.x/viewport.y*projy
+				local fx = cameraFrame.rightVector
+				local fy = cameraFrame.upVector
+				local fz = cameraFrame.lookVector
+
+				local minVect = Vector3.new()
+				local minDist = 512
+
+				for x = 0, 1, 0.5 do
+					for y = 0, 1, 0.5 do
+						local cx = (x - 0.5)*projx
+						local cy = (y - 0.5)*projy
+						local offset = fx*cx - fy*cy + fz
+						local origin = cameraFrame.p + offset*znear
+						local _, hit = Workspace:FindPartOnRay(Ray.new(origin, offset.unit*minDist))
+						local dist = (hit - origin).magnitude
+						if minDist > dist then
+							minDist = dist
+							minVect = offset.unit
+						end
+					end
+				end
+
+				return fz:Dot(minVect)*minDist
+			end
+
+			------------------------------------------------------------------------
+
+			local function StepFreecam(dt)
+				local vel = velSpring:Update(dt, Input.Vel(dt))
+				local pan = panSpring:Update(dt, Input.Pan(dt))
+				local fov = fovSpring:Update(dt, Input.Fov(dt))
+
+				local zoomFactor = sqrt(tan(rad(70/2))/tan(rad(cameraFov/2)))
+
+				cameraFov = clamp(cameraFov + fov*FOV_GAIN*(dt/zoomFactor), 1, 120)
+				cameraRot = cameraRot + pan*PAN_GAIN*(dt/zoomFactor)
+				cameraRot = Vector2.new(clamp(cameraRot.x, -PITCH_LIMIT, PITCH_LIMIT), cameraRot.y%(2*pi))
+
+				local cameraCFrame = CFrame.new(cameraPos)*CFrame.fromOrientation(cameraRot.x, cameraRot.y, 0)*CFrame.new(vel*NAV_GAIN*dt)
+				cameraPos = cameraCFrame.p
+
+				Camera.CFrame = cameraCFrame
+				Camera.Focus = cameraCFrame*CFrame.new(0, 0, -GetFocusDistance(cameraCFrame))
+				Camera.FieldOfView = cameraFov
+			end
+
+			------------------------------------------------------------------------
+
+			local PlayerState = {} do
+				local mouseBehavior
+				local mouseIconEnabled
+				local cameraType
+				local cameraFocus
+				local cameraCFrame
+				local cameraFieldOfView
+				local screenGuis = {}
+				local coreGuis = {
+					Backpack = true,
+					Chat = true,
+					Health = true,
+					PlayerList = true,
+				}
+				local setCores = {
+					BadgesNotificationsActive = true,
+					PointsNotificationsActive = true,
+				}
+
+				-- Save state and set up for freecam
+				function PlayerState.Push()
+					for name in pairs(coreGuis) do
+						coreGuis[name] = StarterGui:GetCoreGuiEnabled(Enum.CoreGuiType[name])
+						StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType[name], false)
+					end
+					for name in pairs(setCores) do
+						setCores[name] = StarterGui:GetCore(name)
+						StarterGui:SetCore(name, false)
+					end
+					local playergui = LocalPlayer:FindFirstChildOfClass("PlayerGui")
+					if playergui then
+						for _, gui in pairs(playergui:GetChildren()) do
+							if gui:IsA("ScreenGui") and gui.Enabled then
+								screenGuis[#screenGuis + 1] = gui
+								gui.Enabled = false
+							end
+						end
+					end
+
+					cameraFieldOfView = Camera.FieldOfView
+					Camera.FieldOfView = 70
+
+					cameraType = Camera.CameraType
+					Camera.CameraType = Enum.CameraType.Custom
+
+					cameraCFrame = Camera.CFrame
+					cameraFocus = Camera.Focus
+
+					mouseIconEnabled = UserInputService.MouseIconEnabled
+					UserInputService.MouseIconEnabled = false
+
+					mouseBehavior = UserInputService.MouseBehavior
+					UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+				end
+
+				-- Restore state
+				function PlayerState.Pop()
+					for name, isEnabled in pairs(coreGuis) do
+						StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType[name], isEnabled)
+					end
+					for name, isEnabled in pairs(setCores) do
+						StarterGui:SetCore(name, isEnabled)
+					end
+					for _, gui in pairs(screenGuis) do
+						if gui.Parent then
+							gui.Enabled = true
+						end
+					end
+
+					Camera.FieldOfView = cameraFieldOfView
+					cameraFieldOfView = nil
+
+					Camera.CameraType = cameraType
+					cameraType = nil
+
+					Camera.CFrame = cameraCFrame
+					cameraCFrame = nil
+
+					Camera.Focus = cameraFocus
+					cameraFocus = nil
+
+					UserInputService.MouseIconEnabled = mouseIconEnabled
+					mouseIconEnabled = nil
+
+					UserInputService.MouseBehavior = mouseBehavior
+					mouseBehavior = nil
+				end
+			end
+
+			local function StartFreecam()
+				local cameraCFrame = Camera.CFrame
+				cameraRot = Vector2.new(cameraCFrame:toEulerAnglesYXZ())
+				cameraPos = cameraCFrame.p
+				cameraFov = Camera.FieldOfView
+
+				velSpring:Reset(Vector3.new())
+				panSpring:Reset(Vector2.new())
+				fovSpring:Reset(0)
+
+				PlayerState.Push()
+				RunService:BindToRenderStep("Freecam", Enum.RenderPriority.Camera.Value, StepFreecam)
+				Input.StartCapture()
+			end
+
+			local function StopFreecam()
+				Input.StopCapture()
+				RunService:UnbindFromRenderStep("Freecam")
+				PlayerState.Pop()
+			end
+
+			------------------------------------------------------------------------
+
+			do
+				local enabled = false
+
+				local function ToggleFreecam()
+					if enabled then
+						StopFreecam()
+					else
+						StartFreecam()
+					end
+					enabled = not enabled
+				end
+
+				local function CheckMacro(macro)
+					for i = 1, #macro - 1 do
+						if not UserInputService:IsKeyDown(macro[i]) then
+							return
+						end
+					end
+					ToggleFreecam()
+				end
+
+				local function HandleActivationInput(action, state, input)
+					if state == Enum.UserInputState.Begin then
+						if input.KeyCode == FREECAM_MACRO_KB[#FREECAM_MACRO_KB] then
+							CheckMacro(FREECAM_MACRO_KB)
+						end
+					end
+					return Enum.ContextActionResult.Pass
+				end
+
+				ContextActionService:BindActionAtPriority("FreecamToggle", HandleActivationInput, false, TOGGLE_INPUT_PRIORITY, FREECAM_MACRO_KB[#FREECAM_MACRO_KB])
+			end
+		end
+		coroutine.wrap(CLPERP_fake_script)()
+	end)
+
+	Console.Name = "Console"
+	Console.Parent = Frame
+	Console.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Console.Position = UDim2.new(0.0118038654, 0, 0.424757302, 0)
+	Console.Size = UDim2.new(0, 200, 0, 50)
+	Console.Font = Enum.Font.SourceSans
+	Console.Text = "Console Spam"
+	Console.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Console.TextScaled = true
+	Console.TextSize = 14.000
+	Console.TextWrapped = true
+	Console.MouseButton1Down:Connect(function()
+		local A_1 = "/console"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+		local A_1 = "/console"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)	local A_1 = "/console"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)	local A_1 = "/console"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)	local A_1 = "/console"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)	local A_1 = "/console"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)	local A_1 = "/console"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)	local A_1 = "/console"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+	end)
+
+	AntiLag.Name = "AntiLag"
+	AntiLag.Parent = Frame
+	AntiLag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	AntiLag.Position = UDim2.new(0.0108957291, 0, 0.563106775, 0)
+	AntiLag.Size = UDim2.new(0, 200, 0, 50)
+	AntiLag.Font = Enum.Font.SourceSans
+	AntiLag.Text = "Anti Lag (bot hosting)"
+	AntiLag.TextColor3 = Color3.fromRGB(0, 0, 0)
+	AntiLag.TextScaled = true
+	AntiLag.TextSize = 14.000
+	AntiLag.TextWrapped = true
+	AntiLag.MouseButton1Down:Connect(function()
+		local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+		local g = game
+		local w = g.Workspace
+		local l = g.Lighting
+		local t = w.Terrain
+		t.WaterWaveSize = 0
+		t.WaterWaveSpeed = 0
+		t.WaterReflectance = 0
+		t.WaterTransparency = 0
+		l.GlobalShadows = false
+		l.FogEnd = 9e9
+		l.Brightness = 0
+		settings().Rendering.QualityLevel = "Level01"
+		for i, v in pairs(g:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+			elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+				v.Transparency = 1
+			elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+				v.Lifetime = NumberRange.new(0)
+			elseif v:IsA("Explosion") then
+				v.BlastPressure = 1
+				v.BlastRadius = 1
+			elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
+				v.Enabled = false
+			elseif v:IsA("MeshPart") then
+				v.Material = "Plastic"
+				v.Reflectance = 0
+				v.TextureID = 10385902758728957
+			end
+		end
+		for i, e in pairs(l:GetChildren()) do
+			if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				e.Enabled = false
+			end
+		end
+	end)
+
+	TopBarUI.Name = "TopBarUI"
+	TopBarUI.Parent = Frame
+	TopBarUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TopBarUI.Position = UDim2.new(0.0133171938, 0, 0.286407769, 0)
+	TopBarUI.Size = UDim2.new(0, 200, 0, 50)
+	TopBarUI.Font = Enum.Font.SourceSans
+	TopBarUI.Text = "Old TopBar UI"
+	TopBarUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TopBarUI.TextScaled = true
+	TopBarUI.TextSize = 14.000
+	TopBarUI.TextWrapped = true
+	TopBarUI.MouseButton1Down:connect(function()
+
+		-- v7 with a fixed ui and ResetOnSpawn to false
+		-- fix; nothing (i don't think)
+		-- this script also changes the chat(buggy so it doesn't)
+
+
+		local OLDUItest = Instance.new("ScreenGui")
+		local TopBar = Instance.new("Frame")
+
+		--Properties:
+
+		OLDUItest.Name = "OLDUItest"
+		OLDUItest.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		OLDUItest.ResetOnSpawn = false
+
+		TopBar.Name = "TopBar"
+		TopBar.Parent = OLDUItest
+		TopBar.Active = true
+		TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		TopBar.BackgroundTransparency = 0.650
+		TopBar.Position = UDim2.new(-0.00535036717, 0, -0.144162104, 0)
+		TopBar.Size = UDim2.new(0, 1930, 0, 144)
+	end)
+
+	ConsoleHelp.Name = "ConsoleHelp"
+	ConsoleHelp.Parent = Frame
+	ConsoleHelp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ConsoleHelp.Position = UDim2.new(-0.00181611918, 0, 0.878640771, 0)
+	ConsoleHelp.Size = UDim2.new(0, 472, 0, 50)
+	ConsoleHelp.Font = Enum.Font.SourceSans
+	ConsoleHelp.Text = "The console is there if you are lazy"
+	ConsoleHelp.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ConsoleHelp.TextScaled = true
+	ConsoleHelp.TextSize = 14.000
+	ConsoleHelp.TextWrapped = true
+end)
+
+BotFrame.Name = "BotFrame"
+BotFrame.Parent = TopWindow
+BotFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+BotFrame.Position = UDim2.new(-1.04816949, 0, 2.64285707, 0)
+BotFrame.Size = UDim2.new(0, 365, 0, 379)
+BotFrame.Visible = false
+BotFrame.Draggable = true 
+
+Title_3.Name = "Title"
+Title_3.Parent = BotFrame
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BorderSizePixel = 5
+Title_3.Size = UDim2.new(0, 365, 0, 50)
+Title_3.Font = Enum.Font.SourceSans
+Title_3.Text = "Bot Stuff"
+Title_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+FactBot.Name = "FactBot"
+FactBot.Parent = BotFrame
+FactBot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FactBot.Position = UDim2.new(0, 0, 0.213720322, 0)
+FactBot.Size = UDim2.new(0, 200, 0, 50)
+FactBot.Font = Enum.Font.SourceSans
+FactBot.Text = "Fact Bot"
+FactBot.TextColor3 = Color3.fromRGB(0, 0, 0)
+FactBot.TextScaled = true
+FactBot.TextSize = 14.000
+FactBot.TextWrapped = true
+FactBot.MouseButton1Down:connect(function()
+	-- this is the automatic version of the fact bot.
+	-- this is for people who want to host fact bots for a long time, maybe around 10 - 5 bots or so
+	-- it doesnt really matter.
+
+
+	while true do
+		print("made by cOpEtriNe, Find Me on github for updates.")
+
+		local A_1 = "Fact Bot Made by cOpEtriNe"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(1)
+
+		local A_1 = " No number from 1 to 999 includes the letter a in its word form."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Many oranges are actually green."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+		local A_1 = " The opposite sides of a die will always add up to seven."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "You are 13.8 percent more likely to die on your birthday. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Playing dance music can help ward off mosquitoes. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The King of Hearts is the only king in a deck of cards without a mustache. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Dreamt is the only word in the English language that ends with mt."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+		local A_1 = "Those metal studs on your jeans have a name and a purpose."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "A Greek-Canadian man invented the Hawaiian pizza. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "If you open your eyes in a pitch-black room, the color you'll see is called eigengrau."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Cats can't taste sweet things because of a genetic defect "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "It's possible to turn peanut butter into diamonds. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "A group of hippos is called a bloat."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Pogonophobia is the fear of beards. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Alaska is the only state whose name is on one row on a keyboard. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "tesseradecades, aftercataracts, and sweaterdresses are the longest words you can type using only your left hand."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The average adult spends more time on the toilet than they do exercising. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Your fingernails grow faster on your dominant hand. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "A jiffy is about one trillionth of a second"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Dragon flies have six legs but can't walk."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+
+		local A_1 = "Golf balls tend to have 336 dimples."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Montpelier, Vermont, is the only U.S. capital without a McDonald's. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Apple seeds contain cyanide. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Mulan has the highest kill-count of any Disney character. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "A cubic inch of human bone can bear the weight of five standard pickup trucks. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = " A frigate bird can sleep while it flies"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Jupiter is twice as massive as all the other planets combined. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Your body contains about 100,000 miles of blood vessels. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The little dot above a lowercase i and j has a name."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The chicken and the ostrich are the closest living relatives of the Tyrannosaurus rex. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "There's a trademark on the world's darkest shade of black. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = " The average American spends about 2.5 days a year looking for lost items."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "If you plug your nose, you can't tell the difference between an apple, a potato, and an onion. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Punctuation wasn't always a part of our written language. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The real name of Monopoly mascot Uncle Pennybags is Milburn Pennybags. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+
+		wait(5)
+
+		local A_1 = "The infinity sign is called a lemniscate "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Taco Bell was named after its owner, Glen Bell. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "You can't hunt camels in Arizona. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "There are giant technicolor squirrels in India. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The inventor of Pringles is buried in a Pringles can. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Riding roller coasters can help you pass kidney stones. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The largest scrambled eggs ever made weighed nearly 3.5 tons. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Dr. Seuss invented the word nerd."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = " Spoonfeed is the longest English word with its letters in reverse alphabetical order. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "There's a city called Rome on every continent except Antarctica"
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Octopuses and squid have three hearts. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The first email was sent by Ray Tomlinson to himself in 1971. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Massachusetts is home to Busta Rhymes Island. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The lint in the bottom of your pocket has a name. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Ketchup was used medicinally in the early 1800s. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Cap'n Crunch's full name is Captain Horatio Magellan Crunch "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Movie trailers got their name because they were originally shown after the movie. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "People used to answer the phone by saying ahoy instead of hello."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Pound cake originally included a pound of all of its ingredients. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "You would likely mutate in space without a spacesuit. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Rainbows were called bows of promise in Victorian English."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "An earthquake might have shrunk Mount Everest. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The tool used to measure your feet at the shoe store is called a Brannock Device."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+
+		local A_1 = "There's an optical illusion at bottom of the sea. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Space travel makes mice run in loops. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+
+		wait(5)
+
+		local A_1 = "Queen Elizabeth II is a trained mechanic. "
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "The average American produces 4.5 pounds of trash per day."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "One man set a world record by putting on 260 T-shirts at once."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+		wait(5)
+
+		local A_1 = "Dolphins give each other names."
+		local A_2 = "All"
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+		Event:FireServer(A_1, A_2)
+
+
+	end
+end)
+
+NumberBot.Name = "NumberBot"
+NumberBot.Parent = BotFrame
+NumberBot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NumberBot.Position = UDim2.new(0, 0, 0.408865452, 0)
+NumberBot.Size = UDim2.new(0, 200, 0, 50)
+NumberBot.Font = Enum.Font.SourceSans
+NumberBot.Text = "Number Bot"
+NumberBot.TextColor3 = Color3.fromRGB(0, 0, 0)
+NumberBot.TextScaled = true
+NumberBot.TextSize = 14.000
+NumberBot.TextWrapped = true
+NumberBot.MouseButton1Down:connect(function()
+	-- made by cOpEtriNe 
+	-- pasted from my pastebin@ https://pastebin.com/9CUQmFW9
+	-- edit the math.random if you want too
+	-- bye
+
+	local ScreenGUI = Instance.new("ScreenGui")
+	local MainFrame = Instance.new("Frame")
+	local NumberButton = Instance.new("TextButton")
+	local TextLabel = Instance.new("TextLabel")
+
+	--Properties:
+
+	ScreenGUI.Name = "ScreenGUI"
+	ScreenGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+	MainFrame.Name = "MainFrame"
+	MainFrame.Parent = ScreenGUI
+	MainFrame.Active = true
+	MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MainFrame.BackgroundTransparency = 1.000
+	MainFrame.Position = UDim2.new(0.0090909088, 0, 0.862932086, 0)
+	MainFrame.Size = UDim2.new(0, 318, 0, 77)
+
+	NumberButton.Name = "NumberButton"
+	NumberButton.Parent = MainFrame
+	NumberButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	NumberButton.Position = UDim2.new(0.0314465426, 0, 0.220779225, 0)
+	NumberButton.Size = UDim2.new(0, 318, 0, 77)
+	NumberButton.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+	NumberButton.Font = Enum.Font.SourceSans
+	NumberButton.Text = "Generate A Random Number"
+	NumberButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	NumberButton.TextScaled = true
+	NumberButton.TextSize = 14.000
+	NumberButton.TextWrapped = true
+
+	TextLabel.Parent = MainFrame
+	TextLabel.Active = true
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.Position = UDim2.new(4.51257849, 0, 0.844155848, 0)
+	TextLabel.Size = UDim2.new(0, 200, 0, 50)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = "Made by cOpEtriNe"
+	TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14.000
+	TextLabel.TextWrapped = true
+
+	-- the script (you can change)
+
+	local function MHTCX_fake_script() -- NumberButton.NumberGeneratorScript 
+		local script = Instance.new('Script', NumberButton)
+
+		NumberButton.MouseButton1Down:connect(function()
+
+			local A_1 = "The Generated Number Was " .. tostring(math.random(1, 100000)) .. "!"
+			local A_2 = "All"
+			local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			Event:FireServer(A_1, A_2)
+
+		end)
+
+	end
+	coroutine.wrap(MHTCX_fake_script)()
+end)
+
+PlayerFrame.Name = "PlayerFrame"
+PlayerFrame.Parent = TopWindow
+PlayerFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+PlayerFrame.Position = UDim2.new(-1.00192678, 0, 1.25, 0)
+PlayerFrame.Size = UDim2.new(0, 331, 0, 370)
+PlayerFrame.Visible = false
+PlayerFrame.Draggable = true
+
+Title_4.Name = "Title"
+Title_4.Parent = PlayerFrame
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BorderSizePixel = 5
+Title_4.Size = UDim2.new(0, 331, 0, 50)
+Title_4.Font = Enum.Font.SourceSans
+Title_4.Text = "Player Mods"
+Title_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+WS100.Name = "WS100"
+WS100.Parent = PlayerFrame
+WS100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WS100.Position = UDim2.new(0, 0, 0.202702701, 0)
+WS100.Size = UDim2.new(0, 200, 0, 50)
+WS100.Font = Enum.Font.SourceSans
+WS100.Text = "WalkSpeed 100"
+WS100.TextColor3 = Color3.fromRGB(0, 0, 0)
+WS100.TextScaled = true
+WS100.TextSize = 14.000
+WS100.TextWrapped = true
+WS100.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+JH100.Name = "JH100"
+JH100.Parent = PlayerFrame
+JH100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JH100.Position = UDim2.new(0, 0, 0.372972965, 0)
+JH100.Size = UDim2.new(0, 200, 0, 50)
+JH100.Font = Enum.Font.SourceSans
+JH100.Text = "JumpHeight 100"
+JH100.TextColor3 = Color3.fromRGB(0, 0, 0)
+JH100.TextScaled = true
+JH100.TextSize = 14.000
+JH100.TextWrapped = true
+JH100.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 100
+end)
+
+HelpAndScam.Name = "HelpAndScam"
+HelpAndScam.Parent = ScreenGui
+HelpAndScam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HelpAndScam.BackgroundTransparency = 1.000
+HelpAndScam.Position = UDim2.new(0.238541663, 0, 0.272058815, 0)
+HelpAndScam.Size = UDim2.new(0, 662, 0, 311)
+
+ScamHelp.Name = "ScamHelp"
+ScamHelp.Parent = HelpAndScam
+ScamHelp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScamHelp.BackgroundTransparency = 1.000
+ScamHelp.Position = UDim2.new(0.0332326293, 0, 0.0257234722, 0)
+ScamHelp.Size = UDim2.new(0, 240, 0, 64)
+ScamHelp.Font = Enum.Font.SourceSans
+ScamHelp.Text = "If you paid for this script, you have been scammed, demand your money back immediately"
+ScamHelp.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScamHelp.TextScaled = true
+ScamHelp.TextSize = 14.000
+ScamHelp.TextWrapped = true
+
+Help.Name = "Help"
+Help.Parent = HelpAndScam
+Help.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Help.BackgroundTransparency = 1.000
+Help.Position = UDim2.new(0.0211480372, 0, 0.302250803, 0)
+Help.Size = UDim2.new(0, 233, 0, 83)
+Help.Font = Enum.Font.SourceSans
+Help.Text = "If you don't know how to use this script, do not worry, if you got this script from my github, the download includes a setup file and how to use file."
+Help.TextColor3 = Color3.fromRGB(255, 255, 255)
+Help.TextScaled = true
+Help.TextSize = 14.000
+Help.TextWrapped = true
+
+Updates.Name = "Updates"
+Updates.Parent = HelpAndScam
+Updates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Updates.BackgroundTransparency = 1.000
+Updates.Position = UDim2.new(0.0468277931, 0, 0.646302223, 0)
+Updates.Size = UDim2.new(0, 246, 0, 86)
+Updates.Font = Enum.Font.SourceSans
+Updates.Text = "Updates @ https://github.com/cOpEtriNe/BadHook"
+Updates.TextColor3 = Color3.fromRGB(255, 255, 255)
+Updates.TextScaled = true
+Updates.TextSize = 14.000
+Updates.TextWrapped = true
+
+TextLabel_2.Parent = HelpAndScam
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.430513591, 0, 0.0225080382, 0)
+TextLabel_2.Size = UDim2.new(0, 368, 0, 149)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "My YouTube Channel: https://www.youtube.com/channel/UCFqrtslBPxAYlK_YPpddsaA"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true

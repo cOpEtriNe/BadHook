@@ -5,4 +5,4 @@ The Script Is Not finished yet, I am still adding things to it, aswell as trying
 
 Version 2 Is in beta.
 
-THIS SCRIPT IS BROKEN, THE BROKEN VERSION WILL STILL BE DOWNLOADBLE.
+It is now public.

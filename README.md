@@ -1,8 +1,6 @@
 # BadHook
 Inspired by Cathook by Nullworks. BadHook is a ROBLOX Script. It Includes Bot Tools, And Some Other Things.
 
-This script is getting a re-code.
-
 Going to archive due to me not giving a shit about this script anymore.
 
 # Information

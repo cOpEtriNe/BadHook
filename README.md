@@ -1,5 +1,5 @@
-## no
-not updating this dumb script ha someone do it for me pls im too lazy 
+## update
+ive decided to work on this script again, i have just noticed that the gui is a complete mess
 
 # BadHook
 Inspired by Cathook by Nullworks. BadHook is a ROBLOX Script. It Includes Bot Tools, And Some Other Things.
